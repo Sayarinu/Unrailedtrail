@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WagonMove : MonoBehaviour
+public class Wagon: MonoBehaviour
 {
     [SerializeField] public int health = 3;
 
