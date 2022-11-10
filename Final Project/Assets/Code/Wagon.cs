@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class WagonMove : MonoBehaviour
 {
+    [SerializeField] public int health = 3;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,6 @@ public class WagonMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.Translate(-0.25f, 0, 0);
+        transform.Translate(-0.1f, 0, 0);
     }
 }
