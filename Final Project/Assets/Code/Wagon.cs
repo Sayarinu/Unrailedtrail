@@ -21,6 +21,6 @@ public class Wagon: MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.Translate(-0.1f, 0, 0);
+        transform.Translate(-0.01f, 0, 0);
     }
 }
