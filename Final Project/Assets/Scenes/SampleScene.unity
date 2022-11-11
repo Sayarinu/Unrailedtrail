@@ -1044,6 +1044,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 8369591668752645135, guid: af187bc247be1874589e289dd28e8f38, type: 3}
+      propertyPath: m_TagString
+      value: Wagon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af187bc247be1874589e289dd28e8f38, type: 3}
 --- !u!1 &847431211
