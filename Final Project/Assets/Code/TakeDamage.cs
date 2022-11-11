@@ -8,9 +8,15 @@ public class TakeDamage : MonoBehaviour
     [SerializeField] public int rockHealth = 1;
     public AudioSource rockSmash;
 
+    private void Awake()
+    {
+        //wagon = GetComponent<GameObject>();
+        rockSmash = GetComponent<AudioSource>();
+    }
+
     void OnTriggerEnter(Collider other) 
     {
-        //wagon.health--;
+        //Wagon.health--;
         //Screenshake & other effects
         rockHealth--;
         if (rockHealth <= 0)

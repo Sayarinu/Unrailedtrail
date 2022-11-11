@@ -75,8 +75,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 728de5b4704663149af3890945139095, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -271,3 +271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65511f40c9461dd4fae76c286459cb39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wagon: {fileID: 5461407502425389740, guid: af187bc247be1874589e289dd28e8f38, type: 3}
+  rockHealth: 1
+  rockSmash: {fileID: 4281925254355766618}
