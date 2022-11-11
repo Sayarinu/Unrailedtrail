@@ -21,11 +21,11 @@ public class TakeDamage : MonoBehaviour
         if (other.tag == "Wagon")
         {
             rockHealth--;
-            if (rockHealth <= 0)
-            {
+            //if (rockHealth <= 0)
+            //{
                 rockSmash.Play();
                 Destroy(gameObject);
-            }
+            //}
         }
         
     }

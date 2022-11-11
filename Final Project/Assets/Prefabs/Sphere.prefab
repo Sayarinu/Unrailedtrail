@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4049557159786756502}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,6 +115,7 @@ MonoBehaviour:
   speed: 20
   variableJoystick: {fileID: 0}
   rb: {fileID: 3074343195383870135}
+  controller: {fileID: 4049557159786756502}
 --- !u!54 &3074343195383870135
 Rigidbody:
   m_ObjectHideFlags: 0
