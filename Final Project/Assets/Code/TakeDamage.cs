@@ -18,11 +18,14 @@ public class TakeDamage : MonoBehaviour
     {
         //wagon.health--;
         //Screenshake & other effects
-        rockHealth--;
-        if (rockHealth <= 0)
+        if (other.tag == "Wagon")
         {
-            rockSmash.Play();
-            Destroy(gameObject);
+            rockHealth--;
+            if (rockHealth <= 0)
+            {
+                rockSmash.Play();
+                Destroy(gameObject);
+            }
         }
         
     }
