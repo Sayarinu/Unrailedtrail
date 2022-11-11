@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2448487656035066153}
   m_Layer: 0
-  m_Name: Rock
+  m_Name: RockDestroyable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
