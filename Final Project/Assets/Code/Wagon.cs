@@ -24,4 +24,9 @@ public class Wagon: MonoBehaviour
     {
         transform.Translate(-speed, 0, 0);
     }
+
+    public void Damage(int amt)
+    {
+        health -= amt;
+    }
 }

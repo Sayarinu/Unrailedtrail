@@ -4,28 +4,31 @@ using UnityEngine;
 
 public class TakeDamage : MonoBehaviour
 {
-    //[SerializeField] public GameObject wagon;
+    [SerializeField] public GameObject wagon;
     [SerializeField] public int rockHealth = 1;
     public AudioSource rockSmash;
+    private int playerHealth;
 
     private void Awake()
     {
-        //wagon = GameObject.FindGameObjectWithTag("Wagon");
-        //rockSmash = GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter(Collider other) 
     {
-        //wagon.health--;
+        //Wagon.Damage(1);
         //Screenshake & other effects
         if (other.tag == "Wagon")
         {
             rockHealth--;
-            //if (rockHealth <= 0)
-            //{
-                rockSmash.Play();
-                Destroy(gameObject);
-            //}
+            rockSmash.Play();
+            if (rockHealth <= 0)
+            {
+                Destroy(gameObject);        
+            }
+            else
+            {
+                // push wagon back
+            }
         }
         
     }
