@@ -139,8 +139,8 @@ GameObject:
   - component: {fileID: 4512360877999969032}
   - component: {fileID: 5908316879483453677}
   m_Layer: 0
-  m_Name: Placeholder Wagon
-  m_TagString: Untagged
+  m_Name: PlaceholderWagon
+  m_TagString: Wagon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
