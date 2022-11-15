@@ -7,16 +7,28 @@ public class TakeDamage : MonoBehaviour
     [SerializeField] public GameObject wagon;
     [SerializeField] public int rockHealth = 1;
     public AudioSource rockSmash;
+    private int playerHealth;
+
+    private void Awake()
+    {
+    }
 
     void OnTriggerEnter(Collider other) 
     {
-        //wagon.health--;
+        //Wagon.Damage(1);
         //Screenshake & other effects
-        rockHealth--;
-        if (rockHealth <= 0)
+        if (other.tag == "Wagon")
         {
-            rockSmash.Play(0);
-            Destroy(this);
+            rockHealth--;
+            rockSmash.Play();
+            if (rockHealth <= 0)
+            {
+                Destroy(gameObject);        
+            }
+            else
+            {
+                // push wagon back
+            }
         }
         
     }

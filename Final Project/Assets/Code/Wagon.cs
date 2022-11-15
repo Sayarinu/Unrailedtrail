@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Wagon: MonoBehaviour
 {
+    [SerializeField] public float speed = 0.02f;
     [SerializeField] public int health = 3;
 
 
@@ -21,6 +22,11 @@ public class Wagon: MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.Translate(-0.1f, 0, 0);
+        transform.Translate(-speed, 0, 0);
+    }
+
+    public void Damage(int amt)
+    {
+        health -= amt;
     }
 }
