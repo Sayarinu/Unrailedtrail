@@ -32,8 +32,8 @@ public class MeshGenerator : MonoBehaviour
         float y;
         for (int i = 0,  z = 0; z <= zSize; z++) {
             for (int x = 0; x <= xSize; x++) {
-                if (x < (xSize / 2 - 5) || (x > xSize / 2 + 5)) {
-                    y  = Mathf.PerlinNoise(x * .3f, z * .3f) * 2f;
+                if (x < (xSize / 2 - 2) || (x > xSize / 2 + 2)) {
+                    y  = 0.3f + Mathf.PerlinNoise(x * .3f, z * .3f) * 2f;
                 } else {
                     y = 1f;
                 }
@@ -70,15 +70,5 @@ public class MeshGenerator : MonoBehaviour
         mesh.triangles = triangles;
 
         mesh.RecalculateNormals();
-    }
-
-    private void OnDrawGizmos() {
-        if (vertices == null) {
-            return;
-        }
-
-        for (int i = 0; i < vertices.Length; i++) {
-            Gizmos.DrawSphere(vertices[i], .1f);
-        }
     }
 }
