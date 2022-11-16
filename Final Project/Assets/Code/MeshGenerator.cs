@@ -39,7 +39,7 @@ public class MeshGenerator : MonoBehaviour
         for (int i = 0,  z = 0; z <= zSize; z++) {
             for (int x = 0; x <= xSize; x++) {
                 if (x < (xSize / 2 - 2) || (x > xSize / 2 + 2)) {
-                    y  = 0.3f + Mathf.PerlinNoise(x * .3f, z * .3f) * 2f;
+                    y  = .3f + Mathf.PerlinNoise(x * .3f, z * .3f) * 2f;
                 } else {
                     y = 1f;
                 }
