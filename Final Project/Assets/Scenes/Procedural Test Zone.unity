@@ -217,6 +217,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &217794788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 217794790}
+  - component: {fileID: 217794789}
+  m_Layer: 0
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &217794789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217794788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613ccd737adbb3f44930984cbb7c1109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterLevel: 0.4
+  size: 100
+  scale: 0.1
+--- !u!4 &217794790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217794788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.490679, y: -16.56771, z: 45.601334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &280397217
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +381,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSize: 20
   zSize: 20
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.5660378, g: 0.48263314, b: 0.253649, a: 1}
+    key1: {r: 0.5660378, g: 0.48263314, b: 0.253649, a: 1}
+    key2: {r: 0.57829, g: 0.49724013, b: 0.274721, a: 0}
+    key3: {r: 0.5790776, g: 0.49817914, b: 0.2760756, a: 0}
+    key4: {r: 1, g: 1, b: 1, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 5397
+    ctime1: 20624
+    ctime2: 33924
+    ctime3: 40092
+    ctime4: 65535
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 18311
+    atime1: 40478
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 5
+    m_NumAlphaKeys: 2
 --- !u!23 &1376953729
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -354,7 +430,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 928465c37503fb14487481b47b40bbd8, type: 2}
+  - {fileID: 2100000, guid: b4c63b29e75632540b3f4777fb995a26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
