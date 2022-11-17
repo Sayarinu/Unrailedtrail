@@ -2279,6 +2279,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1606214016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3074343195383870125, guid: 5fe3ac5ad6986b846a9a0952f8232609, type: 3}
+  m_PrefabInstance: {fileID: 2116057989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1606214024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606214016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1b0abf6c4dd194ca63c267460aaa5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bridge: {fileID: 159429801671114948, guid: 5cd19f1f10c8c574aa41aaa762982be0, type: 3}
 --- !u!1001 &1661647892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2757,10 +2775,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3074343195383870122, guid: 5fe3ac5ad6986b846a9a0952f8232609, type: 3}
-      propertyPath: speed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3074343195383870122, guid: 5fe3ac5ad6986b846a9a0952f8232609, type: 3}
       propertyPath: variableJoystick
       value: 
       objectReference: {fileID: 1705043073}
@@ -2774,7 +2788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3074343195383870134, guid: 5fe3ac5ad6986b846a9a0952f8232609, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.514108
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 3074343195383870134, guid: 5fe3ac5ad6986b846a9a0952f8232609, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2782,7 +2796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3074343195383870134, guid: 5fe3ac5ad6986b846a9a0952f8232609, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.49645996
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3074343195383870134, guid: 5fe3ac5ad6986b846a9a0952f8232609, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2813,15 +2827,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3074343195383870135, guid: 5fe3ac5ad6986b846a9a0952f8232609, type: 3}
-      propertyPath: m_Drag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3074343195383870135, guid: 5fe3ac5ad6986b846a9a0952f8232609, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3074343195383870135, guid: 5fe3ac5ad6986b846a9a0952f8232609, type: 3}
-      propertyPath: m_IsKinematic
+      propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
