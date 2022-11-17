@@ -5,22 +5,26 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    public float speed = 5f;
     public VariableJoystick variableJoystick;
     public Rigidbody rb;
-
-    public CharacterController controller;
+    [SerializeField] private bool useTouchscreen = true;
+    private CharacterController controller;
+    Vector3 move;
 
     private void Start() 
     {
-        controller = gameObject.AddComponent<CharacterController>();
+        controller = gameObject.GetComponent<CharacterController>();
     }
 
-    public void FixedUpdate()
-    //public void Update()
+    //public void FixedUpdate()
+    public void Update()
     {
-        Vector3 direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
-        rb.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
-        //controller.Move(direction * Time.deltaTime * speed);
+
+        if (useTouchscreen) { move = new Vector3(variableJoystick.Horizontal, 0 , variableJoystick.Vertical); }
+        else                { move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")); }
+
+        //rb.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
+        controller.Move(move * Time.deltaTime * speed);
     }
 }
