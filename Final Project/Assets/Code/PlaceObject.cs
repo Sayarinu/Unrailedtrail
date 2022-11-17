@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class PlaceObject : MonoBehaviour
 {
-    public GameObject bridge;
 
+    public GameObject bridge;
     void Update() {
         if (Input.GetKeyDown("space")) {
-            GameObject prefab = bridge;
-            GameObject tree = Instantiate(prefab, transform);
-            tree.transform.position = GameObject.FindWithTag("Player").transform.position;
+            Instantiate(bridge, new Vector3(GameObject.FindWithTag("Player").transform.position.x - 6f, 0.1f, 0f), Quaternion.identity);
         }
     }
 }

@@ -17,7 +17,7 @@ public class Wagon: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        speed *= 1.000001f;
     }
 
     void FixedUpdate()

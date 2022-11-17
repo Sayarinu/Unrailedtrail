@@ -246,12 +246,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 613ccd737adbb3f44930984cbb7c1109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLevel: 0.1
-  grass: {fileID: 919132149155446097, guid: a5481e8aeeb206342b0507e33a96616b, type: 3}
-  water: {fileID: 0}
+  waterLevel: 0.001
   treePrefabs: []
-  height: 50
-  width: 20
+  height: 100
+  width: 100
   scale: 0.1
   terrainMaterial: {fileID: -9117483709511198939, guid: a5481e8aeeb206342b0507e33a96616b, type: 3}
   edgeMaterial: {fileID: -6126091556477775235, guid: a5481e8aeeb206342b0507e33a96616b, type: 3}
