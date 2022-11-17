@@ -536,6 +536,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5778516083343332206, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330305599429750932, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 447774168}
+    - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+      propertyPath: jump
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+      propertyPath: gravity
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
       propertyPath: variableJoystick
       value: 
@@ -560,6 +580,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bridge: {fileID: 0}
+--- !u!54 &447774168 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 3064268535221153123, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+  m_PrefabInstance: {fileID: 447774165}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &459955796
 GameObject:
   m_ObjectHideFlags: 0

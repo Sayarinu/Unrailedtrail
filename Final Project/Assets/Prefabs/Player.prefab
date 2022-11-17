@@ -68,6 +68,8 @@ MonoBehaviour:
   speed: 5
   variableJoystick: {fileID: 0}
   rb: {fileID: 3064268535221153123}
+  useTouchscreen: 1
+  gravity: 2
 --- !u!54 &3064268535221153123
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -82,7 +84,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!1 &5778516083343332206
 GameObject:
