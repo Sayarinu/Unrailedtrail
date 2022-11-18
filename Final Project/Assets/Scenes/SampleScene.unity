@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3146,6 +3146,18 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 43208fc08f277a94fab064a59a3ae9ff, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 43208fc08f277a94fab064a59a3ae9ff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95dd024e2f95a774b867f5c80182c003, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 43208fc08f277a94fab064a59a3ae9ff, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -5170323138729520846, guid: 43208fc08f277a94fab064a59a3ae9ff, type: 3}
     - target: {fileID: 919132149155446097, guid: 43208fc08f277a94fab064a59a3ae9ff, type: 3}
       propertyPath: m_Name
       value: player 1
