@@ -2114,6 +2114,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1186131260645757308, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0544329
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186131260645757308, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_Center.x
+      value: 0.027216211
+      objectReference: {fileID: 0}
     - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_Name
       value: RockDestroyable
@@ -2181,6 +2189,10 @@ PrefabInstance:
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8947325573046971975, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
