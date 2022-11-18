@@ -10,4 +10,16 @@ public class TitleScreen : MonoBehaviour
     public void StartGame(){
         SceneManager.LoadScene(sceneName);
     }
+
+    public void LoadCredits(){
+        SceneManager.LoadScene("Credits");
+    }
+
+    public void LoadTitle(){
+        SceneManager.LoadScene("Title Screen");
+    }
+
+    public void ExitGame() {
+        Application.Quit();
+    }
 }
