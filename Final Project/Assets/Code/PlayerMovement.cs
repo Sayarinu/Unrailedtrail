@@ -35,6 +35,11 @@ public class PlayerMovement : MonoBehaviour
         //rb.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
         controller.Move(move * Time.deltaTime * speed);
 
+        // Rotate
+        if (move != Vector3.zero)
+        {
+            transform.forward = move;
+        }
 
         // Jump
         if (Input.GetButtonDown("Jump")) { 
