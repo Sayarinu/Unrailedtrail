@@ -5,8 +5,11 @@ using UnityEngine;
 public class Wagon: MonoBehaviour
 {
     [SerializeField] public float speed = 0.02f;
-    [SerializeField] public int health = 3;
 
+    [SerializeField] public int health = 100;
+    [SerializeField] public float maxHealth = 100;
+
+    public WagonHealthBar healthbar;
 
     // Start is called before the first frame update
     void Start()
@@ -28,5 +31,6 @@ public class Wagon: MonoBehaviour
     public void Damage(int amt)
     {
         health -= amt;
+        healthbar.UpdateHealthBar();
     }
 }
