@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 move;
 
+    public GameObject bridge;
+
     private void Start() 
     {
         controller = gameObject.GetComponent<CharacterController>();
@@ -49,4 +51,9 @@ public class PlayerMovement : MonoBehaviour
         playerVelocity.y += (gravity * Time.deltaTime);
         controller.Move(playerVelocity * Time.deltaTime);
     }
+
+    public void PlaceBridge(){
+        Instantiate(bridge, new Vector3(GameObject.FindWithTag("Player").transform.position.x - 6f, 0.1f, 0f), Quaternion.identity);
+    }
+
 }

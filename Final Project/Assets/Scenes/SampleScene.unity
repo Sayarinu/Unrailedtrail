@@ -714,6 +714,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2448487656035066153, guid: ea691223a79283549bf92400fa3d39e5, type: 3}
   m_PrefabInstance: {fileID: 383302013}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &391818334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 962633890331486553, guid: 9a612943e30427f4bb9de9b21e7ead8a, type: 3}
+  m_PrefabInstance: {fileID: 962633890384587353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &391818336 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 962633890331486555, guid: 9a612943e30427f4bb9de9b21e7ead8a, type: 3}
+  m_PrefabInstance: {fileID: 962633890384587353}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391818334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &391818338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391818334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 391818336}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 447774169}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: PlaceBridge
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &447774165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -791,8 +863,12 @@ PrefabInstance:
       objectReference: {fileID: 447774168}
     - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
       propertyPath: jump
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+      propertyPath: bridge
+      value: 
+      objectReference: {fileID: 159429801671114948, guid: 5cd19f1f10c8c574aa41aaa762982be0, type: 3}
     - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
       propertyPath: gravity
       value: -5
@@ -826,6 +902,17 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 3064268535221153123, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
   m_PrefabInstance: {fileID: 447774165}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &447774169 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+  m_PrefabInstance: {fileID: 447774165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447774166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a37d705c8e9115e439ec799186182634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &459955796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,7 +3518,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1511397934}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 447774169}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: PlaceBridge
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1511397934
 MonoBehaviour:
   m_ObjectHideFlags: 0
