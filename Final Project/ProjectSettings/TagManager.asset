@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wagon
+  - Enemy
+  - Obstacle
+  - Bridge_button
   layers:
   - Default
   - TransparentFX

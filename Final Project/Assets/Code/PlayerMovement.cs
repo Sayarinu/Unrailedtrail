@@ -5,22 +5,55 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    
     public VariableJoystick variableJoystick;
     public Rigidbody rb;
+    [SerializeField] private bool useTouchscreen = true;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float gravity = -2f;
+    [SerializeField] private float jump = 5f;
+    private Vector3 playerVelocity;
+    private CharacterController controller;
+    private Vector3 move;
 
-    public CharacterController controller;
+    public GameObject bridge;
 
     private void Start() 
     {
-        controller = gameObject.AddComponent<CharacterController>();
+        controller = gameObject.GetComponent<CharacterController>();
     }
 
-    public void FixedUpdate()
-    //public void Update()
+    //public void FixedUpdate()
+    public void Update()
     {
-        Vector3 direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
-        rb.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
-        //controller.Move(direction * Time.deltaTime * speed);
+
+        // Move using either touchscreen or WASD for testing
+        if (useTouchscreen) { 
+            move = new Vector3(variableJoystick.Horizontal, 0, variableJoystick.Vertical);
+        }
+        else { 
+            move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        }
+        //rb.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
+        controller.Move(move * Time.deltaTime * speed);
+
+        // Rotate
+        if (move != Vector3.zero)
+        {
+            transform.forward = move;
+        }
+
+        // Jump
+        if (Input.GetButtonDown("Jump")) { 
+            playerVelocity.y += Mathf.Sqrt(jump * -3.0f * gravity);
+        }
+        
+        playerVelocity.y += (gravity * Time.deltaTime);
+        controller.Move(playerVelocity * Time.deltaTime);
     }
+
+    public void PlaceBridge(){
+        Instantiate(bridge, new Vector3(GameObject.FindWithTag("Player").transform.position.x - 6f, 0.1f, 0f), Quaternion.identity);
+    }
+
 }
