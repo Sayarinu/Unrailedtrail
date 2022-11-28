@@ -15,8 +15,11 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 playerVelocity;
     private CharacterController controller;
     private Vector3 move;
+    private int currentX = 0;
 
     public GameObject bridge;
+
+    public GameObject terrain;
 
     private void Start() 
     {
@@ -50,10 +53,19 @@ public class PlayerMovement : MonoBehaviour
         
         playerVelocity.y += (gravity * Time.deltaTime);
         controller.Move(playerVelocity * Time.deltaTime);
+
+        if (GameObject.FindWithTag("Player").transform.position.x < currentX - 20) {
+            currentX -= 115;
+            GenerateTerrain();
+        }
     }
 
     public void PlaceBridge(){
         Instantiate(bridge, new Vector3(GameObject.FindWithTag("Player").transform.position.x - 6f, 0.1f, 0f), Quaternion.identity);
+    }
+
+    public void GenerateTerrain() {
+        Instantiate(terrain, new Vector3(currentX, -6.678398f, 6.20949f), Quaternion.identity);
     }
 
 }
