@@ -464,6 +464,18 @@ PrefabInstance:
       propertyPath: variableJoystick
       value: 
       objectReference: {fileID: 1705043073}
+    - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+      propertyPath: terrains.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+      propertyPath: terrains.Array.data[0]
+      value: 
+      objectReference: {fileID: 651258185673021774, guid: 8e778efb8a1949049b61acdd095040d8, type: 3}
+    - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+      propertyPath: terrains.Array.data[1]
+      value: 
+      objectReference: {fileID: 6503066476714001235, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
 --- !u!54 &447774168 stripped
@@ -2157,6 +2169,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3049007237497987140, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6503066476714001234, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
       propertyPath: m_RootOrder
       value: 4
