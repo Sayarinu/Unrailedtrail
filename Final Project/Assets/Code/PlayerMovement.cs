@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     
     public VariableJoystick variableJoystick;
     public Rigidbody rb;
+    [SerializeField] GameObject[] terrains;
     [SerializeField] private bool useTouchscreen = true;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float gravity = -2f;
@@ -18,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
     private int currentX = 0;
 
     public GameObject bridge;
-
     public GameObject terrain;
 
     private void Start() 
@@ -65,7 +65,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void GenerateTerrain() {
-        Instantiate(terrain, new Vector3(currentX, -6.678398f, 6.20949f), Quaternion.identity);
+        Instantiate(terrains[Random.Range(0, terrains.Length)], new Vector3(currentX, -6.678398f, 6.20949f), Quaternion.identity);
     }
-
 }
