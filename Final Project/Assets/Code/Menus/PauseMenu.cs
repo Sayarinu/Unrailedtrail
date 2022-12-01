@@ -11,11 +11,15 @@ public class PauseMenu : MonoBehaviour
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            if (GameIsPaused) {
-                Resume();
-            } else {
-                Pause();
-            }
+            goToState();
+        }
+    }
+
+    public void goToState() {
+        if (GameIsPaused) {
+            Resume();
+        } else {                
+            Pause();
         }
     }
 
@@ -29,5 +33,13 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+    }
+
+    public void ReturnToTile() {
+        SceneManager.LoadScene("Title Screen");
+    }
+
+    public void Quit() {
+        Application.Quit();
     }
 }
