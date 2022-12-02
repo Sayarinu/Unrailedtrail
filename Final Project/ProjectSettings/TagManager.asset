@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - Bridge_button
   - river
+  - Wood_Resource
   layers:
   - Default
   - TransparentFX
