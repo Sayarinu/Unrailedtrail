@@ -8,4 +8,7 @@ public class PublicVars
 
     public float thirst = 100;
     public float thirstMax = 100;
+
+    public float wood = 100;
+    public float woodMax = 100;
 }

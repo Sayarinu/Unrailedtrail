@@ -7,6 +7,7 @@ public class BarHungerThirst : MonoBehaviour
 {
     public Image hungerBarImage;
     public Image thirstBarImage;
+    public Image woodBarImage;
     public PublicVars publicvars;
 
     public void UpdateHungerBar()
@@ -17,5 +18,10 @@ public class BarHungerThirst : MonoBehaviour
     public void UpdateThirstBar()
     {
         thirstBarImage.fillAmount = Mathf.Clamp(publicvars.thirst / publicvars.thirstMax, 0, 1f);
+    }
+
+    public void UpdateWoodBar()
+    {
+        woodBarImage.fillAmount = Mathf.Clamp(publicvars.wood / publicvars.woodMax, 0, 1f);
     }
 }
