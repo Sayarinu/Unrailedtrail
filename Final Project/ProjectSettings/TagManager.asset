@@ -10,6 +10,7 @@ TagManager:
   - Bridge_button
   - river
   - Wood_Resource
+  - Weapon
   layers:
   - Default
   - TransparentFX
