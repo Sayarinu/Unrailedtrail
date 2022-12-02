@@ -12,7 +12,7 @@ public class TitleScreen : MonoBehaviour
     }
 
     public void LoadCredits(){
-        SceneManager.LoadScene("Credits");
+        
     }
 
     public void LoadTitle(){
