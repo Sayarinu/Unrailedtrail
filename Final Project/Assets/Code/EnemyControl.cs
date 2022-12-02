@@ -5,31 +5,24 @@ using UnityEngine.AI;
 
 public class EnemyControl : MonoBehaviour
 {
-    Transform player;
+    GameObject player;
     NavMeshAgent _agent;
 
-    void Awake()
+    void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-       // StartCoroutine(LookForPlayer());
+        player = GameObject.FindGameObjectWithTag("Player");
+        StartCoroutine(LookForPlayer());
     }
 
-    void Update()
+    IEnumerator LookForPlayer()
     {
-        float distance = Vector3.Distance(this.transform.position, player.transform.position);
-        if(distance < 15)
+        while (true)
         {
-            _agent.SetDestination(player.position);
-            transform.LookAt(player);
+            yield return new WaitForSeconds(.5f);
+            _agent.SetDestination(player.transform.position);
         }
-        else
-        {
-            _agent.enabled = false;
-        }
-        
     }
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -39,15 +32,4 @@ public class EnemyControl : MonoBehaviour
             Destroy(gameObject); // currently enemies are one hit kill
         }
     }
-
-    /*
-     *     IEnumerator LookForPlayer()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(.5f);
-            _agent.SetDestination(player.transform.position);
-        }
-    }
-     */
 }
