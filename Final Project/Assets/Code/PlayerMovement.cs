@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 move;
     private int currentX = 0;
-    private double DROP_HEIGHT = 0.6;
 
     public GameObject bridge;
     public GameObject terrain;
@@ -59,14 +58,6 @@ public class PlayerMovement : MonoBehaviour
             currentX -= 115;
             GenerateTerrain();
         }
-
-        // if player falls lower than ground, reset position
-        if (GameObject.FindWithTag("Player").transform.position.y < DROP_HEIGHT) {
-            // transform player x position + 5 with random z position within range
-            GameObject.FindWithTag("Player").transform.position = new Vector3(
-                GameObject.FindWithTag("Player").transform.position.x + 5, 0, Random.Range(-5, 5));
-        }
-
     }
 
     public void PlaceBridge(){

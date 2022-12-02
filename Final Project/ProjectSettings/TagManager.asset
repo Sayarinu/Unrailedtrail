@@ -8,7 +8,6 @@ TagManager:
   - Enemy
   - Obstacle
   - Bridge_button
-  - river
   layers:
   - Default
   - TransparentFX
