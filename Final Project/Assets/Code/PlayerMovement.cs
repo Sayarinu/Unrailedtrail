@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 move;
     private int currentX = 0;
+    private float GROUND_HEIGHT = 0.6f;
 
     public GameObject bridge;
     public GameObject terrain;
@@ -58,6 +59,12 @@ public class PlayerMovement : MonoBehaviour
         if (GameObject.FindWithTag("Player").transform.position.x < currentX - 20) {
             currentX -= 115;
             GenerateTerrain();
+        }
+
+        // if player falls in under GROUND_HEIGHT, respawn
+        if (GameObject.FindWithTag("Player").transform.position.y < GROUND_HEIGHT) {
+            GameObject.FindWithTag("Player").transform.position = new Vector3(
+                GameObject.FindWithTag("Player").transform.position.x + 5, 0, Random.Range(-5, 5));
         }
     }
 
