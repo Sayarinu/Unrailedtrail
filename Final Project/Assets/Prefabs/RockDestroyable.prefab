@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65511f40c9461dd4fae76c286459cb39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wagon: {fileID: 5461407502425389740, guid: af187bc247be1874589e289dd28e8f38, type: 3}
+  wagon: {fileID: 919132149155446097, guid: 391c386891664f94faf7f3c075e04b77, type: 3}
   rockHealth: 1
   rockSmash: {fileID: 4281925254355766618}
 --- !u!65 &1075459665727534565
