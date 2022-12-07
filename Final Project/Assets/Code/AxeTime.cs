@@ -19,7 +19,7 @@ public class AxeTime : MonoBehaviour
 
     void FixedUpdate()
     {
-        timerActive--
-        if(timerActive == 0) {o}
+        timerActive--;
+        if(timerActive == 0) { Destroy(gameObject); }
     }
 }

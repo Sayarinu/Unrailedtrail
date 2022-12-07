@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void SwingAxe(){
-        Instantiate(axe, new Vector3(GameObject.FindWithTag("Player").transform.position.x - 6f, 0.1f, 0f), Quaternion.identity);
+        Instantiate(axe, new Vector3(GameObject.FindWithTag("Player").transform.position.x - 0.0f, 0.0f, 0.0f), Quaternion.identity);
     }
 
     public void GenerateTerrain() {
