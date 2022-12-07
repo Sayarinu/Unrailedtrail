@@ -5,31 +5,64 @@ using UnityEngine.AI;
 
 public class EnemyControl : MonoBehaviour
 {
-    GameObject player;
-    NavMeshAgent _agent;
+    public float moveSpeed = 3f;
+    public float rotateSpeed = 100f;
 
-    void Start()
+    private bool isWandering = false;
+    private bool isRotatingLeft = false;
+    private bool isRotatingRight = false;
+    private bool isWalking = false;
+
+    void Update()
     {
-        _agent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        StartCoroutine(LookForPlayer());
+        if (isWandering == false)
+        {
+            StartCoroutine(Wander());
+        }
+        if (isRotatingRight == true)
+        {
+            transform.Rotate(transform.up * Time.deltaTime * rotateSpeed);
+        }
+        if (isRotatingLeft == true)
+        {
+            transform.Rotate(transform.up * Time.deltaTime * -rotateSpeed);
+        }
+        if (isWalking == true)
+        {
+            transform.position += transform.forward * moveSpeed * Time.deltaTime;
+        }
+        
     }
 
-    IEnumerator LookForPlayer()
+    IEnumerator Wander()
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(.5f);
-            _agent.SetDestination(player.transform.position);
-        }
-    }
+        int rotTime = Random.Range(1, 3);
+        int rotWait = Random.Range(1, 3);
+        int rotDir = Random.Range(0, 3);
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Weapon"))
+        int walkTime = Random.Range(1, 3);
+        int walkWait = Random.Range(1, 5);
+
+        isWandering = true;
+
+        yield return new WaitForSeconds(walkWait);
+        isWalking = true;
+        yield return new WaitForSeconds(walkTime);
+        isWalking = false;
+        yield return new WaitForSeconds(rotWait);
+        if (rotDir == 1)
         {
-            //Destroy(other.gameObject); // necesscary if bullets/arrows are used
-            Destroy(gameObject); // currently enemies are one hit kill
+            isRotatingRight = true;
+            yield return new WaitForSeconds(rotTime);
+            isRotatingRight = false;
         }
+        if(rotDir == 2)
+        {
+            isRotatingLeft = true;
+            yield return new WaitForSeconds(rotTime);
+            isRotatingLeft = false;
+            
+        }
+        isWandering = false;
     }
 }
