@@ -68,10 +68,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   variableJoystick: {fileID: 0}
   rb: {fileID: 3064268535221153123}
+  terrains: []
   useTouchscreen: 1
   speed: 5
   gravity: 2
   jump: 5
+  bridge: {fileID: 159429801671114948, guid: 5cd19f1f10c8c574aa41aaa762982be0, type: 3}
+  terrain: {fileID: 0}
+  axe: {fileID: 5126493711858300187, guid: d85a85df65cecc84fbbdb8d5e1175b76, type: 3}
 --- !u!54 &3064268535221153123
 Rigidbody:
   m_ObjectHideFlags: 0
