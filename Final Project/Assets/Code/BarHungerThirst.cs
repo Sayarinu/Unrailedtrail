@@ -34,13 +34,13 @@ public class BarHungerThirst : MonoBehaviour
         if (isDecaying == false)
         {
             isDecaying = true;
-            StartCoroutine(Decay(5));
+            StartCoroutine(Decay(20));
         }
     }
 
     IEnumerator Decay(int time)
     {
-        yield return new WaitForSeconds(time); // waits 30sec to decay hunger/thirst 
+        yield return new WaitForSeconds(time); // waits 20 secs to decay hunger/thirst 
 
         publicvars.hunger -= hunger_decay; 
         UpdateHungerBar();
