@@ -4609,10 +4609,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3049007237497987140, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6503066476714001234, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -4660,6 +4656,10 @@ PrefabInstance:
     - target: {fileID: 6503066476714001235, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
       propertyPath: m_Name
       value: Level Geometry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6503066476714001235, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
