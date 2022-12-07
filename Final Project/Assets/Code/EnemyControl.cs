@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyControl : MonoBehaviour
 {
-    public float moveSpeed = 3f;
-    public float rotateSpeed = 100f;
+    public float moveSpeed = 2f;
+    public float rotateSpeed = 60f;
 
     private bool isWandering = false;
     private bool isRotatingLeft = false;
@@ -29,7 +29,8 @@ public class EnemyControl : MonoBehaviour
         }
         if (isWalking == true)
         {
-            transform.position += transform.forward * moveSpeed * Time.deltaTime;
+            // -1 is there because forward is making the model move backwards
+            transform.position += transform.forward * (-1) * moveSpeed * Time.deltaTime;
         }
         
     }
