@@ -3597,6 +3597,8 @@ MonoBehaviour:
   hungerBarImage: {fileID: 1529322212}
   thirstBarImage: {fileID: 972445901}
   woodBarImage: {fileID: 1941426559}
+  hunger_decay: 5
+  thirst_decay: 5
 --- !u!114 &1518453835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4758,7 +4760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7878994545777226012}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.77, y: -1.46, z: 0.29}
+  m_LocalPosition: {x: -1.53, y: -1.46, z: 0.29}
   m_LocalScale: {x: 0.57351744, y: 0.57351744, z: 0.57351744}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4775,6 +4777,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7357790422400953254}
+  - component: {fileID: 7878994545777226013}
   m_Layer: 0
   m_Name: wolf
   m_TagString: Untagged
@@ -4782,6 +4785,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7878994545777226013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7878994545777226012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dc7278134d364e1481cfae43757c3c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  rotateSpeed: 100
 --- !u!23 &8325689366258544279
 MeshRenderer:
   m_ObjectHideFlags: 0

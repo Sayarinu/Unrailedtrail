@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyControl : MonoBehaviour
 {
-    public float moveSpeed = 2f;
-    public float rotateSpeed = 60f;
+    public float moveSpeed = 1f;
+    public float rotateSpeed = 40f;
 
     private bool isWandering = false;
     private bool isRotatingLeft = false;
