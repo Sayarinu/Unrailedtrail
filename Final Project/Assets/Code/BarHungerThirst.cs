@@ -12,6 +12,7 @@ public class BarHungerThirst : MonoBehaviour
 
     public float hunger_decay = 5f; // reduces hunger and thirst by 5pt every 30sec
     public float thirst_decay = 5f;
+    public bool isDecaying = false;
 
     public void UpdateHungerBar()
     {
@@ -30,7 +31,11 @@ public class BarHungerThirst : MonoBehaviour
 
     void Update()
     {
-        StartCoroutine(Decay(5));
+        if (isDecaying == false)
+        {
+            isDecaying = true;
+            StartCoroutine(Decay(5));
+        }
     }
 
     IEnumerator Decay(int time)
@@ -43,6 +48,7 @@ public class BarHungerThirst : MonoBehaviour
         publicvars.thirst -= thirst_decay;
         UpdateThirstBar();
 
+        isDecaying = false;
     }
 
 }
