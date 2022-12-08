@@ -7,7 +7,7 @@ public class WoodChop : MonoBehaviour
     public PublicVars publicvars = new PublicVars();
     public AudioSource woodChopSound;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Weapon")
         {
