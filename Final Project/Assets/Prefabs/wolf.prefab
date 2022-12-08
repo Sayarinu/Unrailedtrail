@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 130947431916680566}
   m_Layer: 0
   m_Name: wolf
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,6 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc7278134d364e1481cfae43757c3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 1
+  rotateSpeed: 40
 --- !u!195 &4770642589075715748
 NavMeshAgent:
   m_ObjectHideFlags: 0
