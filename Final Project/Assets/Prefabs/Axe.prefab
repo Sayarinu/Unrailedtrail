@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5416971010276641683}
   m_Layer: 0
   m_Name: Axe
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,6 +210,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5405781419956354444, guid: ae8ce4ce66d1025478c69e4592d3d8cc, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: -2275626690770050688, guid: ae8ce4ce66d1025478c69e4592d3d8cc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -221,6 +225,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ae8ce4ce66d1025478c69e4592d3d8cc, type: 3}
       propertyPath: m_Name
       value: Axe
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae8ce4ce66d1025478c69e4592d3d8cc, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 2675226870574953077, guid: ae8ce4ce66d1025478c69e4592d3d8cc, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae8ce4ce66d1025478c69e4592d3d8cc, type: 3}

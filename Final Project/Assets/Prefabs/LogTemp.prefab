@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6775274041879802670}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Wood_Resource
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,6 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6382086269711700027}
   - component: {fileID: 8426081814424849067}
+  - component: {fileID: 5517381758372013881}
   m_Layer: 0
   m_Name: LogTemp
   m_TagString: Wood_Resource
@@ -227,3 +228,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5517381758372013881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197821140534714796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df58938f52a550742890807fb756edec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  woodChopSound: {fileID: 8426081814424849067}
