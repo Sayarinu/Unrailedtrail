@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.34554318, g: 0.605226, b: 0.80815595, a: 1}
+  m_IndirectSpecularColor: {r: 0.34558874, g: 0.6051445, b: 0.8077076, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1644,6 +1644,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 447774169}
+    - target: {fileID: 7096068808183607136, guid: c0f0f75b45da04872a6517ffc88720cd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096068808183607136, guid: c0f0f75b45da04872a6517ffc88720cd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096068808183607136, guid: c0f0f75b45da04872a6517ffc88720cd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 410
+      objectReference: {fileID: 0}
     - target: {fileID: 7096068808449498073, guid: c0f0f75b45da04872a6517ffc88720cd, type: 3}
       propertyPath: wagon
       value: 
