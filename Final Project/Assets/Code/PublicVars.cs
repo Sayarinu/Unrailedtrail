@@ -9,4 +9,6 @@ public static class PublicVars
 
     public static float wood = 5;
     public static float woodMax = 10;
+
+    public static float score = 0;
 }
