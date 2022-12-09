@@ -22,5 +22,7 @@ public class ScoreUI : MonoBehaviour
         score += incr_by_second * Time.deltaTime;
         score_display = (int)score;
         textbox.text = "Score: " + score_display;
+        PublicVars.thirst -= 0.2f;
+        PublicVars.hunger -= 0.1f;
     }
 }
