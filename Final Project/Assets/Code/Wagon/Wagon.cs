@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Wagon: MonoBehaviour
 {
-    [SerializeField] public float speed = 0.02f;
+    [SerializeField] public float speed = 0.025f;
     [SerializeField] public float speed_up_factor = 0.0002f;
     private int rotation_multiplier = 45;
     
