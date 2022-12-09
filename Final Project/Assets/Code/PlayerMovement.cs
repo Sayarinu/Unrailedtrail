@@ -7,8 +7,6 @@ public class PlayerMovement : MonoBehaviour
 {
     
     public VariableJoystick variableJoystick;
-
-    WoodChop WoodBar = new WoodChop();
     public Rigidbody rb;
     [SerializeField] GameObject[] terrains;
     [SerializeField] private bool useTouchscreen = true;
@@ -72,13 +70,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void PlaceBridge(){
         if (PublicVars.wood >= 5) {
-            Instantiate(bridge, new Vector3(GameObject.FindWithTag("Player").transform.position.x - 6f, 0.1f, 0f), Quaternion.identity);
             PublicVars.wood -= 5;
         }
     }
 
     public void getWater() {
-        if (PublicVars.thirst < PublicVars.thirstMax) {
+        if (PublicVars.thirst != PublicVars.thirstMax) {
             PublicVars.thirst = PublicVars.thirstMax;
         }
     }
