@@ -16,14 +16,11 @@ public class WoodChop : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("collided");
-        print(other.gameObject.tag);
         if (other.gameObject.tag == "Wood_Resource")
         {
-            while(PublicVars.wood < PublicVars.woodMax)
-            {
-                PublicVars.wood++;
-                UpdateWoodBar();
+            PublicVars.wood += 5;
+            if (PublicVars.wood > PublicVars.woodMax) {
+                PublicVars.wood = PublicVars.woodMax;
             }
             woodChopSound.PlayOneShot(woodChopClip);
             Destroy(other.gameObject);
@@ -37,6 +34,10 @@ public class WoodChop : MonoBehaviour
             Destroy(gameObject); // or reduce health
             // }
         }
+    }
+
+    public void Update() {
+        UpdateWoodBar();
     }
 
     public void UpdateWoodBar()
