@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool useTouchscreen = true;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float gravity = -2f;
-    [SerializeField] private float jump = 5f;
     private Vector3 playerVelocity;
     private CharacterController controller;
     private Vector3 move;
@@ -47,11 +46,6 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.forward = move;
         }
-
-        // Jump
-        if (Input.GetButtonDown("Jump")) { 
-            playerVelocity.y += Mathf.Sqrt(jump * -3.0f * gravity);
-        }
         
         playerVelocity.y += (gravity * Time.deltaTime);
         controller.Move(playerVelocity * Time.deltaTime);
@@ -72,20 +66,7 @@ public class PlayerMovement : MonoBehaviour
         if (PublicVars.wood >= 5) {
             PublicVars.wood -= 5;
             Instantiate(bridge, new Vector3(GameObject.FindWithTag("Player").transform.position.x - 6f, 0.1f, 0f), Quaternion.identity);
-            // Update wood UI
         }
-    }
-
-    public void SwingAxe(){
-        GameObject player = GameObject.FindWithTag("Player");
-        Vector3    playerLoc = player.transform.position;
-        Vector3    playerDir = player.transform.forward;
-        Quaternion playerRot = player.transform.rotation;
-        Quaternion axeRot = Quaternion.Euler(45, 0, 0);
-        float axeDist = 3;
-        Vector3 axeAdj = new Vector3(0f, 1f, 0f);
-        Vector3 axeLoc = playerLoc - axeAdj + playerDir*axeDist;
-        Instantiate(axe, axeLoc, playerRot * axeRot);
     }
 
     public void GenerateTerrain() {

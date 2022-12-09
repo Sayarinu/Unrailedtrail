@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3313261315142271705}
   - component: {fileID: 7584089773820258940}
   - component: {fileID: 7257619202094446578}
-  - component: {fileID: 6775274041879802670}
+  - component: {fileID: 8493524147562647491}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Wood_Resource
@@ -84,20 +84,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &6775274041879802670
-CapsuleCollider:
+--- !u!114 &8493524147562647491
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7251500654880015391}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df58938f52a550742890807fb756edec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  woodChopSound: {fileID: 0}
+  enemyHitSound: {fileID: 0}
+  woodChopClip: {fileID: 0}
 --- !u!1 &9197821140534714796
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +110,7 @@ GameObject:
   - component: {fileID: 6382086269711700027}
   - component: {fileID: 8426081814424849067}
   - component: {fileID: 5517381758372013881}
+  - component: {fileID: 7217959216718364919}
   m_Layer: 0
   m_Name: LogTemp
   m_TagString: Wood_Resource
@@ -241,3 +243,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   woodChopSound: {fileID: 8426081814424849067}
+  enemyHitSound: {fileID: 0}
+  woodChopClip: {fileID: 8300000, guid: 7f25fdc6bd4cd9d4c8f28f94d3c7c4eb, type: 3}
+--- !u!136 &7217959216718364919
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197821140534714796}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.2083752
+  m_Height: 3.1197085
+  m_Direction: 1
+  m_Center: {x: -0.03357148, y: 0.04838991, z: 0.09998143}

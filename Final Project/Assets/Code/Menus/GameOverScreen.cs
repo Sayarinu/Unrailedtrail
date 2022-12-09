@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameOverScreen : MonoBehaviour
 {
     public void playAgain() {
-        SceneManager.LoadScene("Sample Scene");
+        SceneManager.LoadScene("SampleScene");
     }
     public void returnToTitle() {
         SceneManager.LoadScene("Title Screen");
