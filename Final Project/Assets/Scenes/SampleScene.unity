@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 5b0d467d9a3a85c449adc44c985fcccf, type: 2}
   m_HaloStrength: 0.5
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 6ba25ed928c80554cb63c903b1932460, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -393,6 +393,14 @@ PrefabInstance:
       propertyPath: jump
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+      propertyPath: wolf
+      value: 
+      objectReference: {fileID: 6092987245584362521, guid: 61ce0c97138db4cda983c9fc17f24726, type: 3}
+    - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
+      propertyPath: wood
+      value: 
+      objectReference: {fileID: 9197821140534714796, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
     - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
       propertyPath: bridge
       value: 
@@ -1340,7 +1348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 391c386891664f94faf7f3c075e04b77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9
+      value: 1.57
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 391c386891664f94faf7f3c075e04b77, type: 3}
       propertyPath: m_LocalPosition.z

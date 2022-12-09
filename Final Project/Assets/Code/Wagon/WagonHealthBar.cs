@@ -6,13 +6,12 @@ using TMPro;
 public class WagonHealthBar : MonoBehaviour
 {
     public Image healthBarImage;
-    public WagonDamageController wagon;
     [SerializeField] TextMeshProUGUI hp_text;
 
     public void UpdateHealthBar()
     {
-        healthBarImage.fillAmount = Mathf.Clamp(wagon.health / wagon.maxHealth, 0, 1f);
-        hp_text.text = wagon.health + "/" + wagon.maxHealth;
+        healthBarImage.fillAmount = Mathf.Clamp(PublicVars.health / PublicVars.maxHealth, 0, 1f);
+        hp_text.text = PublicVars.health + "/" + PublicVars.maxHealth;
     }
 
     public void Update() {
@@ -20,9 +19,9 @@ public class WagonHealthBar : MonoBehaviour
     }
 
     public void EndGame() {
-        if (wagon.health == 0 || PublicVars.hunger == 0) {
+        if (PublicVars.health == 0 || PublicVars.hunger == 0) {
             PublicVars.hunger = 100;
-            wagon.health = 100;
+            PublicVars.health = 100;
             PublicVars.wood = 5;
             SceneManager.LoadScene("GameOver");
         }
