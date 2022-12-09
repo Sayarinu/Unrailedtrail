@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Wagon: MonoBehaviour
 {
@@ -34,6 +35,10 @@ public class Wagon: MonoBehaviour
         BR.transform.Rotate(0, 0, speed * rotation_multiplier % 360);
         FL.transform.Rotate(0, 0, speed * rotation_multiplier % 360);
         FR.transform.Rotate(0, 0, speed * rotation_multiplier % 360);
+
+        if (GameObject.FindWithTag("Wagon").transform.position.y < 1) {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
     void FixedUpdate()
