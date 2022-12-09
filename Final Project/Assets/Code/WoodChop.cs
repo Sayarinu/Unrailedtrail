@@ -1,21 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WoodChop : MonoBehaviour
 {
     public PublicVars publicvars = new PublicVars();
     public AudioSource woodChopSound;
-    
+    public Image woodBarImage;
+
     public AudioClip woodChopClip;
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Weapon")
+        print("collided");
+        print(other.gameObject.tag);
+        if (other.gameObject.tag == "Wood_Resource")
         {
-            publicvars.wood ++;
+            while(publicvars.wood < publicvars.woodMax)
+            {
+                publicvars.wood++;
+                UpdateWoodBar();
+            }
             woodChopSound.PlayOneShot(woodChopClip);
-            Destroy(gameObject);
+            Destroy(other.gameObject);
         }
     }
+
+    public void UpdateWoodBar()
+    {
+        woodBarImage.fillAmount = Mathf.Clamp(publicvars.wood / publicvars.woodMax, 0, 1f);
+    }
+
 }
