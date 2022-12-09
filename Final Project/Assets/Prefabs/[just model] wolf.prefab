@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 130947431916680566}
   m_Layer: 0
-  m_Name: wolf
+  m_Name: '[just model] wolf'
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
