@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Wagon: MonoBehaviour
 {
     [SerializeField] public float speed = 0.02f;
-    [SerializeField] public float speed_up_factor = 1.000001f;
+    [SerializeField] public float speed_up_factor = 0.0002f;
     private int rotation_multiplier = 45;
     
     // public variables for 4 wheels of the wagon
@@ -28,7 +28,7 @@ public class Wagon: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        speed *= speed_up_factor;
+        speed += speed_up_factor;
 
         // rotate wheels according to speed
         BL.transform.Rotate(0, 0, speed * rotation_multiplier % 360);
