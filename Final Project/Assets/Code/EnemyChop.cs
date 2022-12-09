@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyChop : MonoBehaviour
 {
-    public PublicVars publicvars = new PublicVars();
+    //public PublicVars publicvars = new PublicVars();
     public AudioSource enemyHitSound;
     [SerializeField] private int foodAmt = 10;
 
@@ -16,7 +16,7 @@ public class EnemyChop : MonoBehaviour
             enemyHitSound.Play();
             // enemy.health --;
             // if (health <= 0) {
-            publicvars.hunger += foodAmt; // when 
+            PublicVars.hunger += foodAmt; // when 
             Destroy(gameObject); // or reduce health
             // }
         }
@@ -26,4 +26,4 @@ public class EnemyChop : MonoBehaviour
 //        wood_text.text = publicvars.wood + "/" + publicvars.woodMax;
 //    }
     }  
-}
+} 

@@ -69,7 +69,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void PlaceBridge(){
-        Instantiate(bridge, new Vector3(GameObject.FindWithTag("Player").transform.position.x - 6f, 0.1f, 0f), Quaternion.identity);
+        if (PublicVars.wood >= 5) {
+            PublicVars.wood -= 5;
+            Instantiate(bridge, new Vector3(GameObject.FindWithTag("Player").transform.position.x - 6f, 0.1f, 0f), Quaternion.identity);
+            // Update wood UI
+        }
     }
 
     public void SwingAxe(){

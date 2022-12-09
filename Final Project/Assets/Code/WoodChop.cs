@@ -6,9 +6,9 @@ using TMPro;
 
 public class WoodChop : MonoBehaviour
 {
-    public PublicVars publicvars = new PublicVars();
     public AudioSource woodChopSound;
     public Image woodBarImage;
+    public AudioSource enemyHitSound;
     [SerializeField] TextMeshProUGUI wood_text;
     public AudioClip woodChopClip;
 
@@ -18,19 +18,31 @@ public class WoodChop : MonoBehaviour
         print(other.gameObject.tag);
         if (other.gameObject.tag == "Weapon")
         {
-            while(publicvars.wood < publicvars.woodMax)
-            {
-                publicvars.wood++;
-                UpdateWoodBar();
+            PublicVars.wood += 5;
+            if (PublicVars.wood > PublicVars.woodMax) {
+                PublicVars.wood = PublicVars.woodMax;
             }
             woodChopSound.PlayOneShot(woodChopClip);
             Destroy(gameObject);
         }
+        else if (other.gameObject.tag == "Weapon")
+        {
+            enemyHitSound.Play();
+            // enemy.health --;
+            // if (health <= 0) {
+            PublicVars.hunger += 10; // when 
+            Destroy(gameObject); // or reduce health
+            // }
+        }
+    }
+
+    public void Update() {
+        UpdateWoodBar();
     }
 
     public void UpdateWoodBar()
     {
-        woodBarImage.fillAmount = Mathf.Clamp(publicvars.wood / publicvars.woodMax, 0, 1f);
-        wood_text.text = publicvars.wood + "/" + publicvars.woodMax;
+        woodBarImage.fillAmount = Mathf.Clamp(PublicVars.wood / PublicVars.woodMax, 0, 1f);
+        wood_text.text = PublicVars.wood + "/" + PublicVars.woodMax;
     }
 }
