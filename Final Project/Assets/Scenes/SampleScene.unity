@@ -1579,24 +1579,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthbar: {fileID: 3992217726847452712}
---- !u!114 &1842337850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1842337843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a9bb7c8b0b64fe43931122ae1f160e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.02
-  speed_up_factor: 1.000002
-  BL: {fileID: 1921440270}
-  BR: {fileID: 299109142}
-  FL: {fileID: 1099741884}
-  FR: {fileID: 541581879}
 --- !u!54 &1842337854
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1627,6 +1609,24 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8921297645391016500, guid: 391c386891664f94faf7f3c075e04b77, type: 3}
+--- !u!114 &1842337858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842337843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9bb7c8b0b64fe43931122ae1f160e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.02
+  speed_up_factor: 0.00000002
+  BL: {fileID: 1921440270}
+  BR: {fileID: 299109142}
+  FL: {fileID: 1099741884}
+  FR: {fileID: 541581879}
 --- !u!1 &1846478204 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8947325573046971975, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
