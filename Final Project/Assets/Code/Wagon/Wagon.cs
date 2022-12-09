@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Wagon: MonoBehaviour
 {
-    [SerializeField] public float speed = 0.02f;
-    [SerializeField] public float speed_up_factor = 1.000001f;
+    public float speed = 0.02f;
+    public float speed_up_factor = 1.000001f;
     private int rotation_multiplier = 45;
     
     // public variables for 4 wheels of the wagon

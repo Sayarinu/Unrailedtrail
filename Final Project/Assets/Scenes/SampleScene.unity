@@ -861,6 +861,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+--- !u!1 &864373143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3850764322812492453, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
+  m_PrefabInstance: {fileID: 6503066476164516001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &864373148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864373143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7ab13bb51c546f4b959f21b815d9561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1031477129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,6 +1594,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   woodChopSound: {fileID: 0}
   woodBarImage: {fileID: 1477984575}
+  enemyHitSound: {fileID: 0}
+  foodAmt: 10
   wood_text: {fileID: 22065018}
   woodChopClip: {fileID: 0}
 --- !u!65 &1822327912
@@ -1848,6 +1867,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2225838241600861794, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
+      propertyPath: m_Size.y
+      value: 4.2489653
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225838241600861794, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
+      propertyPath: m_Center.y
+      value: 1.6244828
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225838241600861794, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6503066476714001234, guid: 7b285a0aad71c724ba251df1fdbcffcc, type: 3}
       propertyPath: m_RootOrder
       value: 6
