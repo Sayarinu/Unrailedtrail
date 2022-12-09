@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class WoodChop : MonoBehaviour
 {
     public PublicVars publicvars = new PublicVars();
     public AudioSource woodChopSound;
     public Image woodBarImage;
+    [SerializeField] TextMeshProUGUI wood_text;
 
     public AudioClip woodChopClip;
 
@@ -30,6 +32,7 @@ public class WoodChop : MonoBehaviour
     public void UpdateWoodBar()
     {
         woodBarImage.fillAmount = Mathf.Clamp(publicvars.wood / publicvars.woodMax, 0, 1f);
+        wood_text.text = publicvars.wood + "/" + publicvars.woodMax;
     }
 
 }
