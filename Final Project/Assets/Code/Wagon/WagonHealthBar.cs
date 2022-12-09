@@ -8,6 +8,11 @@ public class WagonHealthBar : MonoBehaviour
     public Image healthBarImage;
     [SerializeField] TextMeshProUGUI hp_text;
 
+    public void Start() {
+        PublicVars.health = 100;
+        UpdateHealthBar();
+    }
+
     public void UpdateHealthBar()
     {
         healthBarImage.fillAmount = Mathf.Clamp(PublicVars.health / PublicVars.maxHealth, 0, 1f);

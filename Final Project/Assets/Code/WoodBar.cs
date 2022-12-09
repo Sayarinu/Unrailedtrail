@@ -7,6 +7,11 @@ public class WoodBar : MonoBehaviour
     public Image woodBarImage;
     [SerializeField] TextMeshProUGUI wood_text;
 
+    public void Start() {
+        PublicVars.wood = 5;
+        UpdateWoodBar();
+    }
+
     public void Update() {
         UpdateWoodBar();
     }

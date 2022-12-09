@@ -12,6 +12,12 @@ public class BarHungerThirst : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI hunger_text;
 
+    void Start()
+    {
+        PublicVars.hunger = 100;
+        UpdateHungerBar();
+    }
+
     public void UpdateHungerBar()
     {
         hungerBarImage.fillAmount = Mathf.Clamp(PublicVars.hunger / PublicVars.hungerMax, 0, 1f);
