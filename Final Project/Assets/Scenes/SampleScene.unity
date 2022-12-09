@@ -530,6 +530,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4956069879044496557, guid: 7af578b9fe7aced49bdcf6a6494bab57, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7af578b9fe7aced49bdcf6a6494bab57, type: 3}
 --- !u!1001 &569566910
@@ -1662,7 +1666,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!64 &1842337855
 MeshCollider:
@@ -3879,7 +3883,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score_display: 0
-  score: 0
   incr_by_second: 0
   textbox: {fileID: 3992217726467575903}
 --- !u!1 &3992217726964499504

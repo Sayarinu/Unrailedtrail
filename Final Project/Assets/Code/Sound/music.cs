@@ -11,4 +11,8 @@ public class music : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void SetVolume(float volume) {
+        GetComponent<AudioSource>().volume = volume;
+    }
 }
