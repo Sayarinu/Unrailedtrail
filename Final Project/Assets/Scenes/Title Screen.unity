@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1893040280}
   m_HandleRect: {fileID: 1208332018}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0.5
@@ -1051,12 +1051,12 @@ MonoBehaviour:
       - m_Target: {fileID: 4956069878392817300}
         m_TargetAssemblyTypeName: music, Assembly-CSharp
         m_MethodName: SetVolume
-        m_Mode: 4
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0.5
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -3098,8 +3098,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4956069879044496557, guid: 7af578b9fe7aced49bdcf6a6494bab57, type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4956069879044496557, guid: 7af578b9fe7aced49bdcf6a6494bab57, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 362f27dcae2055b4e8c4c1f51f45a169, type: 2}
+    - target: {fileID: 4956069879044496558, guid: 7af578b9fe7aced49bdcf6a6494bab57, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 362f27dcae2055b4e8c4c1f51f45a169, type: 2}
+    - target: {fileID: 4956069879044496558, guid: 7af578b9fe7aced49bdcf6a6494bab57, type: 3}
+      propertyPath: background_music
+      value: 
+      objectReference: {fileID: 4956069878392817301}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7af578b9fe7aced49bdcf6a6494bab57, type: 3}
 --- !u!114 &4956069878392817300 stripped
@@ -3113,6 +3125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b292e76a1d8d8349976f26412d50c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &4956069878392817301 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4956069879044496557, guid: 7af578b9fe7aced49bdcf6a6494bab57, type: 3}
+  m_PrefabInstance: {fileID: 4956069878392817299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5165912570901079411
 PrefabInstance:
   m_ObjectHideFlags: 0
