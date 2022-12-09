@@ -37,6 +37,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ReturnToTile() {
         SceneManager.LoadScene("Title Screen");
+        GameIsPaused = false;
     }
 
     public void Quit() {
