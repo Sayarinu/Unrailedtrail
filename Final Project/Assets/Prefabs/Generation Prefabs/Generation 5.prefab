@@ -1758,6 +1758,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockDestroyable (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -1819,6 +1823,10 @@ PrefabInstance:
     - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_Name
       value: RockDestroyable (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
@@ -1882,6 +1890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockDestroyable (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -1943,6 +1955,10 @@ PrefabInstance:
     - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_Name
       value: RockDestroyable (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
@@ -2006,6 +2022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockDestroyable (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -2067,6 +2087,10 @@ PrefabInstance:
     - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_Name
       value: RockDestroyable (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
@@ -2130,6 +2154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockDestroyable (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2191,6 +2219,10 @@ PrefabInstance:
     - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_Name
       value: RockDestroyable (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
@@ -2254,6 +2286,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockDestroyable (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -2315,6 +2351,10 @@ PrefabInstance:
     - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_Name
       value: RockDestroyable (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
@@ -2378,6 +2418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockDestroyable (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -2439,6 +2483,10 @@ PrefabInstance:
     - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_Name
       value: RockDestroyable (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
@@ -2502,6 +2550,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockDestroyable (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -2563,6 +2615,10 @@ PrefabInstance:
     - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_Name
       value: RockDestroyable (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
@@ -2626,6 +2682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockDestroyable (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -2687,6 +2747,10 @@ PrefabInstance:
     - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_Name
       value: RockDestroyable (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
@@ -2750,6 +2814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockDestroyable (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -2811,6 +2879,10 @@ PrefabInstance:
     - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_Name
       value: RockDestroyable (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
@@ -2874,6 +2946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockDestroyable (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -2936,6 +3012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockDestroyable (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2997,6 +3077,10 @@ PrefabInstance:
     - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_Name
       value: RockDestroyable (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998789221155133139, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2448487656035066153, guid: 42c2958f84443fd4c809167b3cea9743, type: 3}
       propertyPath: m_RootOrder
