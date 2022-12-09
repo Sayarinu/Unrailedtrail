@@ -9,17 +9,14 @@ public class WoodChop : MonoBehaviour
     public PublicVars publicvars = new PublicVars();
     public AudioSource woodChopSound;
     public Image woodBarImage;
-    public AudioSource enemyHitSound;
-    [SerializeField] private int foodAmt = 10;
     [SerializeField] TextMeshProUGUI wood_text;
-
     public AudioClip woodChopClip;
 
     private void OnTriggerEnter(Collider other)
     {
         print("collided");
         print(other.gameObject.tag);
-        if (other.gameObject.tag == "Wood_Resource")
+        if (other.gameObject.tag == "Weapon")
         {
             while(publicvars.wood < publicvars.woodMax)
             {
@@ -27,16 +24,7 @@ public class WoodChop : MonoBehaviour
                 UpdateWoodBar();
             }
             woodChopSound.PlayOneShot(woodChopClip);
-            Destroy(other.gameObject);
-        }
-        else if (other.gameObject.tag == "Weapon")
-        {
-            enemyHitSound.Play();
-            // enemy.health --;
-            // if (health <= 0) {
-            publicvars.hunger += foodAmt; // when 
-            Destroy(gameObject); // or reduce health
-            // }
+            Destroy(gameObject);
         }
     }
 
