@@ -8,20 +8,23 @@ using UnityEngine.SceneManagement;
 public class ScoreUI : MonoBehaviour
 {
     public int score_display;
-    public float score;
+    // public float score;
     public float incr_by_second;
     [SerializeField] TextMeshProUGUI textbox;
 
     void Start()
     {
-        score = 0f;
-        incr_by_second = 0.2f; // currently 1 point per 5 seconds passed
+        PublicVars.score = 0f;
+        incr_by_second = 0.5f; // currently 1 point per 2 seconds passed
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        score += incr_by_second * Time.deltaTime;
-        score_display = (int)score;
+        PublicVars.score += incr_by_second * Time.deltaTime;
+        score_display = (int)PublicVars.score;
         textbox.text = "Score: " + score_display;
+        if (PublicVars.score > PlayerPrefs.GetInt("HighScore", 0)) {
+            PlayerPrefs.SetInt("HighScore", (int)PublicVars.score);
+        }
     }
 }
