@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3313261315142271705}
   - component: {fileID: 7584089773820258940}
   - component: {fileID: 7257619202094446578}
-  - component: {fileID: 8493524147562647491}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Wood_Resource
@@ -84,21 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8493524147562647491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7251500654880015391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df58938f52a550742890807fb756edec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  woodChopSound: {fileID: 0}
-  enemyHitSound: {fileID: 0}
-  woodChopClip: {fileID: 0}
 --- !u!1 &9197821140534714796
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +227,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   woodChopSound: {fileID: 8426081814424849067}
-  enemyHitSound: {fileID: 0}
   woodChopClip: {fileID: 8300000, guid: 7f25fdc6bd4cd9d4c8f28f94d3c7c4eb, type: 3}
 --- !u!136 &7217959216718364919
 CapsuleCollider:

@@ -905,18 +905,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: wood_text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: woodBarImage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: woodChopClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f25fdc6bd4cd9d4c8f28f94d3c7c4eb, type: 3}
     - target: {fileID: 6382086269711700027, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -961,76 +949,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Height
-      value: 3.801605
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Radius
-      value: 0.7470939
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Center.x
-      value: 0.13468528
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Center.y
-      value: 0.90080225
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Center.z
-      value: -0.11240864
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9197821140534714796, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: m_Name
       value: LogTemp (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
---- !u!1 &1034470575 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9197821140534714796, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-  m_PrefabInstance: {fileID: 1034470574}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1034470576 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7251500654880015391, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-  m_PrefabInstance: {fileID: 1034470574}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &1034470577
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034470575}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.2083752
-  m_Height: 3.1197085
-  m_Direction: 1
-  m_Center: {x: -0.03357148, y: 0.04838991, z: 0.09998143}
---- !u!114 &1034470578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034470576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df58938f52a550742890807fb756edec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  woodChopSound: {fileID: 0}
-  enemyHitSound: {fileID: 0}
-  woodChopClip: {fileID: 0}
 --- !u!1 &1099741884 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2353407451053397215, guid: 391c386891664f94faf7f3c075e04b77, type: 3}
@@ -1057,18 +981,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: wood_text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: woodBarImage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: woodChopClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f25fdc6bd4cd9d4c8f28f94d3c7c4eb, type: 3}
     - target: {fileID: 6382086269711700027, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1113,76 +1025,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Height
-      value: 3.801605
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Radius
-      value: 0.7470939
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Center.x
-      value: 0.13468528
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Center.y
-      value: 0.90080225
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Center.z
-      value: -0.11240864
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9197821140534714796, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: m_Name
       value: LogTemp (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
---- !u!1 &1102872941 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9197821140534714796, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-  m_PrefabInstance: {fileID: 1102872940}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1102872942 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7251500654880015391, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-  m_PrefabInstance: {fileID: 1102872940}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &1102872943
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102872941}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.2083752
-  m_Height: 3.1197085
-  m_Direction: 1
-  m_Center: {x: -0.03357148, y: 0.04838991, z: 0.09998143}
---- !u!114 &1102872944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102872942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df58938f52a550742890807fb756edec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  woodChopSound: {fileID: 0}
-  enemyHitSound: {fileID: 0}
-  woodChopClip: {fileID: 0}
 --- !u!1 &1131941745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,18 +1793,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: wood_text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: woodBarImage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: woodChopClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f25fdc6bd4cd9d4c8f28f94d3c7c4eb, type: 3}
     - target: {fileID: 6382086269711700027, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -2001,76 +1837,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Height
-      value: 3.801605
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Radius
-      value: 0.7470939
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Center.x
-      value: 0.13468528
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Center.y
-      value: 0.90080225
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_Center.z
-      value: -0.11240864
-      objectReference: {fileID: 0}
-    - target: {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9197821140534714796, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: m_Name
       value: LogTemp (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6775274041879802670, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
---- !u!1 &1981376058 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9197821140534714796, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-  m_PrefabInstance: {fileID: 1981376057}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1981376059 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7251500654880015391, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
-  m_PrefabInstance: {fileID: 1981376057}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &1981376060
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1981376058}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.2083752
-  m_Height: 3.1197085
-  m_Direction: 1
-  m_Center: {x: -0.03357148, y: 0.04838991, z: 0.09998143}
---- !u!114 &1981376061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1981376059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df58938f52a550742890807fb756edec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  woodChopSound: {fileID: 0}
-  enemyHitSound: {fileID: 0}
-  woodChopClip: {fileID: 0}
 --- !u!114 &196839063625428592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4241,8 +4013,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4926001783846194364, guid: 61ce0c97138db4cda983c9fc17f24726, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ce0c97138db4cda983c9fc17f24726, type: 3}
 --- !u!114 &4180586473589496695
 MonoBehaviour:

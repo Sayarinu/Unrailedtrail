@@ -20,6 +20,7 @@ public class BarHungerThirst : MonoBehaviour
 
     void Update()
     {
+        UpdateHungerBar();
         if (isDecaying == false)
         {
             isDecaying = true;

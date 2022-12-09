@@ -24,7 +24,6 @@ public class Axe : MonoBehaviour
 
     public void Attack()
     {
-        Debug.Log("Attack");
         StartCoroutine(AttackRoutine());
     }
 

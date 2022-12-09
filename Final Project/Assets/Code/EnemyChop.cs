@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyChop : MonoBehaviour
 {
-    //public PublicVars publicvars = new PublicVars();
     public AudioSource enemyHitSound;
     [SerializeField] private int foodAmt = 10;
 
@@ -14,16 +13,19 @@ public class EnemyChop : MonoBehaviour
         if (other.gameObject.tag == "Weapon")
         {
             enemyHitSound.Play();
-            // enemy.health --;
-            // if (health <= 0) {
-            PublicVars.hunger += foodAmt; // when 
-            Destroy(gameObject); // or reduce health
-            // }
+
+            // public vars hunger increased by foodAmt until reaches hungerMax
+            if (PublicVars.hunger < PublicVars.hungerMax)
+            {
+                PublicVars.hunger += foodAmt;
+                if (PublicVars.hunger > PublicVars.hungerMax)
+                {
+                    PublicVars.hunger = PublicVars.hungerMax;
+                }
+            }
+
+            // currently it destroys the enemy on hit
+            Destroy(gameObject); 
         }
-//    public void UpdateFoodBar()
-//    {
-//        woodBarImage.fillAmount = Mathf.Clamp(publicvars.wood / publicvars.woodMax, 0, 1f);
-//        wood_text.text = publicvars.wood + "/" + publicvars.woodMax;
-//    }
     }  
 } 

@@ -7,9 +7,6 @@ using TMPro;
 public class WoodChop : MonoBehaviour
 {
     public AudioSource woodChopSound;
-    // public Image woodBarImage;
-    public AudioSource enemyHitSound;
-    // [SerializeField] TextMeshProUGUI wood_text;
     public AudioClip woodChopClip;
 
     private void OnTriggerEnter(Collider other)
@@ -23,14 +20,5 @@ public class WoodChop : MonoBehaviour
             woodChopSound.PlayOneShot(woodChopClip);
             Destroy(gameObject);
         }
-        // else if (other.gameObject.tag == "Weapon")
-        // {
-        //     enemyHitSound.Play();
-        //     // enemy.health --;
-        //     // if (health <= 0) {
-        //     PublicVars.hunger += 10; // when 
-        //     Destroy(gameObject); // or reduce health
-        //     // }
-        // }
     }
 }
