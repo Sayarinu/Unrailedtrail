@@ -6,7 +6,6 @@ using TMPro;
 
 public class WoodChop : MonoBehaviour
 {
-    public PublicVars publicvars = new PublicVars();
     public AudioSource woodChopSound;
     public Image woodBarImage;
     public AudioSource enemyHitSound;
@@ -21,9 +20,9 @@ public class WoodChop : MonoBehaviour
         print(other.gameObject.tag);
         if (other.gameObject.tag == "Wood_Resource")
         {
-            while(publicvars.wood < publicvars.woodMax)
+            while(PublicVars.wood < PublicVars.woodMax)
             {
-                publicvars.wood++;
+                PublicVars.wood++;
                 UpdateWoodBar();
             }
             woodChopSound.PlayOneShot(woodChopClip);
@@ -34,7 +33,7 @@ public class WoodChop : MonoBehaviour
             enemyHitSound.Play();
             // enemy.health --;
             // if (health <= 0) {
-            publicvars.hunger += foodAmt; // when 
+            PublicVars.hunger += foodAmt; // when 
             Destroy(gameObject); // or reduce health
             // }
         }
@@ -42,7 +41,7 @@ public class WoodChop : MonoBehaviour
 
     public void UpdateWoodBar()
     {
-        woodBarImage.fillAmount = Mathf.Clamp(publicvars.wood / publicvars.woodMax, 0, 1f);
-        wood_text.text = publicvars.wood + "/" + publicvars.woodMax;
+        woodBarImage.fillAmount = Mathf.Clamp(PublicVars.wood / PublicVars.woodMax, 0, 1f);
+        wood_text.text = PublicVars.wood + "/" + PublicVars.woodMax;
     }
 }
