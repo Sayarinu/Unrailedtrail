@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.3453893, g: 0.6032014, b: 0.8071993, a: 1}
+  m_IndirectSpecularColor: {r: 0.34538722, g: 0.6032017, b: 0.80719936, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -204,6 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   woodChopSound: {fileID: 0}
   woodBarImage: {fileID: 0}
+  enemyHitSound: {fileID: 0}
   wood_text: {fileID: 0}
   woodChopClip: {fileID: 0}
 --- !u!1 &268320391
@@ -429,7 +430,7 @@ PrefabInstance:
     - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
       propertyPath: variableJoystick
       value: 
-      objectReference: {fileID: 2039268268}
+      objectReference: {fileID: 196839063625428592}
     - target: {fileID: 6559433411301750074, guid: 3d3b729750f598c4aa7dcc18bad8701e, type: 3}
       propertyPath: terrains.Array.size
       value: 5
@@ -943,11 +944,11 @@ PrefabInstance:
     - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: wood_text
       value: 
-      objectReference: {fileID: 7096068809237572696}
+      objectReference: {fileID: 0}
     - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: woodBarImage
       value: 
-      objectReference: {fileID: 1941426559}
+      objectReference: {fileID: 0}
     - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: woodChopClip
       value: 
@@ -1065,6 +1066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   woodChopSound: {fileID: 0}
   woodBarImage: {fileID: 0}
+  enemyHitSound: {fileID: 0}
   wood_text: {fileID: 0}
   woodChopClip: {fileID: 0}
 --- !u!1 &1099741884 stripped
@@ -1096,11 +1098,11 @@ PrefabInstance:
     - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: wood_text
       value: 
-      objectReference: {fileID: 7096068809237572696}
+      objectReference: {fileID: 0}
     - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: woodBarImage
       value: 
-      objectReference: {fileID: 1941426559}
+      objectReference: {fileID: 0}
     - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: woodChopClip
       value: 
@@ -1218,6 +1220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   woodChopSound: {fileID: 0}
   woodBarImage: {fileID: 0}
+  enemyHitSound: {fileID: 0}
   wood_text: {fileID: 0}
   woodChopClip: {fileID: 0}
 --- !u!1 &1131941745
@@ -1579,11 +1582,11 @@ PrefabInstance:
     - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: wood_text
       value: 
-      objectReference: {fileID: 7096068809237572696}
+      objectReference: {fileID: 0}
     - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: woodBarImage
       value: 
-      objectReference: {fileID: 1941426559}
+      objectReference: {fileID: 0}
     - target: {fileID: 5517381758372013881, guid: 9fc78660749aba1468e7f159920b29b9, type: 3}
       propertyPath: woodChopClip
       value: 
