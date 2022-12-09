@@ -36,13 +36,15 @@ public class Wagon: MonoBehaviour
         FL.transform.Rotate(0, 0, speed * rotation_multiplier % 360);
         FR.transform.Rotate(0, 0, speed * rotation_multiplier % 360);
 
-        if (GameObject.FindWithTag("Wagon").transform.position.y < 1) {
+        if (GameObject.FindWithTag("Wagon").transform.position.y < .6) {
             SceneManager.LoadScene("GameOver");
         }
     }
 
     void FixedUpdate()
     {
+        // TODO: not sure translate is the best way to move the wagon
+        // causes it to have weird physics
         transform.Translate(-speed, 0, 0);
     }
 }
