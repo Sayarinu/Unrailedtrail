@@ -69,15 +69,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void PlaceBridge(){
-        if (PublicVars.wood >= 5) {
-            PublicVars.wood -= 5;
-        }
-    }
-
-    public void getWater() {
-        if (PublicVars.thirst != PublicVars.thirstMax) {
-            PublicVars.thirst = PublicVars.thirstMax;
-        }
+        Instantiate(bridge, new Vector3(GameObject.FindWithTag("Player").transform.position.x - 6f, 0.1f, 0f), Quaternion.identity);
     }
 
     public void SwingAxe(){

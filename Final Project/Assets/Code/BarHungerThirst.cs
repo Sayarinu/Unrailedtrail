@@ -8,6 +8,7 @@ public class BarHungerThirst : MonoBehaviour
 {
     public Image hungerBarImage;
     public Image thirstBarImage;
+    public PublicVars publicvars = new PublicVars();
 
     public float hunger_decay = 5f; // reduces hunger and thirst by 5pt every 30sec
     public float thirst_decay = 5f;
@@ -18,14 +19,14 @@ public class BarHungerThirst : MonoBehaviour
 
     public void UpdateHungerBar()
     {
-        hungerBarImage.fillAmount = Mathf.Clamp(PublicVars.hunger / PublicVars.hungerMax, 0, 1f);
-        hunger_text.text = PublicVars.hunger + "/" + PublicVars.hungerMax;
+        hungerBarImage.fillAmount = Mathf.Clamp(publicvars.hunger / publicvars.hungerMax, 0, 1f);
+        hunger_text.text = publicvars.hunger + "/" + publicvars.hungerMax;
     }
 
     public void UpdateThirstBar()
     {
-        thirstBarImage.fillAmount = Mathf.Clamp(PublicVars.thirst / PublicVars.thirstMax, 0, 1f);
-        thirst_text.text = PublicVars.thirst + "/" + PublicVars.thirstMax;
+        thirstBarImage.fillAmount = Mathf.Clamp(publicvars.thirst / publicvars.thirstMax, 0, 1f);
+        thirst_text.text = publicvars.thirst + "/" + publicvars.thirstMax;
     }
 
     void Update()
@@ -41,10 +42,10 @@ public class BarHungerThirst : MonoBehaviour
     {
         yield return new WaitForSeconds(time); // waits 20 secs to decay hunger/thirst 
 
-        PublicVars.hunger -= hunger_decay; 
+        publicvars.hunger -= hunger_decay; 
         UpdateHungerBar();
 
-        PublicVars.thirst -= thirst_decay;
+        publicvars.thirst -= thirst_decay;
         UpdateThirstBar();
 
         isDecaying = false;
