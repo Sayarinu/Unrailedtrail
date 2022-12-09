@@ -812,14 +812,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031477129}
-  m_LocalRotation: {x: -0, y: -0.70710677, z: 0.000000014901159, w: 0.7071068}
-  m_LocalPosition: {x: -17.87, y: 1.1800001, z: -1}
+  m_LocalRotation: {x: 0.0000000049069753, y: -0.90051913, z: 0.000000014070043, w: 0.43481648}
+  m_LocalPosition: {x: -22.82, y: 1.18, z: -5.96}
   m_LocalScale: {x: 27.19356, y: 5.3866997, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1842337844}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -128.453, z: 0}
 --- !u!65 &1031477131
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1007,14 +1007,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131941745}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 13.928027, y: 1.1200001, z: 1.8434486}
+  m_LocalRotation: {x: -0, y: 0.9178907, z: -0, w: 0.39683312}
+  m_LocalPosition: {x: 4.48, y: 1.12, z: -6.17}
   m_LocalScale: {x: 43.224876, y: 5.3866997, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1842337844}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 133.239, z: 0}
 --- !u!65 &1131941747
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1578,8 +1578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc6ea8d901b84e4d80ad5e364b16cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
   healthbar: {fileID: 3992217726847452712}
 --- !u!114 &1842337850
 MonoBehaviour:
@@ -3556,7 +3554,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarImage: {fileID: 3992217725261596253}
-  wagon: {fileID: 1842337849}
   hp_text: {fileID: 6133190358430509236}
 --- !u!224 &3992217726847452713
 RectTransform:
