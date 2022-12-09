@@ -9,7 +9,7 @@ public class WoodChop : MonoBehaviour
     public AudioSource woodChopSound;
     public Image woodBarImage;
     public AudioSource enemyHitSound;
-    [SerializeField] private int foodAmt = 10;
+
     [SerializeField] TextMeshProUGUI wood_text;
 
     public AudioClip woodChopClip;
@@ -30,7 +30,7 @@ public class WoodChop : MonoBehaviour
             enemyHitSound.Play();
             // enemy.health --;
             // if (health <= 0) {
-            PublicVars.hunger += foodAmt; // when 
+            PublicVars.hunger += 10; // when 
             Destroy(gameObject); // or reduce health
             // }
         }
