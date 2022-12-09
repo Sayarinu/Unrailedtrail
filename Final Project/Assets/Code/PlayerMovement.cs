@@ -7,8 +7,6 @@ public class PlayerMovement : MonoBehaviour
 {
     
     public VariableJoystick variableJoystick;
-
-    WoodChop WoodBar = new WoodChop();
     public Rigidbody rb;
     [SerializeField] GameObject[] terrains;
     [SerializeField] private bool useTouchscreen = true;
